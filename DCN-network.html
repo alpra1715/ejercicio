@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://45.230.171.2/cliente/index.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DCN-network</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="./DCN-network_files/bootstrap.min.css" media="all">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./DCN-network_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./DCN-network_files/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="./DCN-network_files/dataTables.responsive.css">
+    <link rel="stylesheet" href="./DCN-network_files/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="./DCN-network_files/buttons.bootstrap.min.css">
+    <link rel="stylesheet" href="./DCN-network_files/morris.css">
+    
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./DCN-network_files/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="./DCN-network_files/skin-blue.min.css">
+    <link rel="stylesheet" href="./DCN-network_files/animate.css">
+    <link rel="stylesheet" href="./DCN-network_files/tabdrop.css">
+    <link rel="stylesheet" href="./DCN-network_files/select2.min.css">
+    <link rel="stylesheet" href="./DCN-network_files/datepicker3.css">
+    <link rel="stylesheet" href="./DCN-network_files/bootstrap3-wysihtml5.min.css">
+    
+    
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./DCN-network_files/mikrowisp.css" media="all">
+     <link rel="stylesheet" href="./DCN-network_files/chat.css" media="all">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    
+  <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+
+<body class="skin-blue sidebar-mini fixed modal-open">
+    <div class="wrapper">
+      <header class="main-header">
+
+        <!-- Logo -->
+        <a href="http://45.230.171.2/cliente/index.php" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><b>MK</b>5</span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><img src="./DCN-network_files/logo.png" alt="Inicio" class="logo-login"></span>
+        </a>
+
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation" style="min-height: 40px !important;">
+          <!-- Sidebar toggle button-->
+          <a href="javascript:void(0)" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+
+          
+          <!-- Navbar Right Menu -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+
+              <li class="dropdown messages-menu">
+                <a href="http://45.230.171.2/cliente/index.php#" class="dropdown-toggle" data-toggle="dropdown" style="padding: 15px 12px;">
+                  <i class="fa fa-flag-o"></i>
+                  <span class="label label-danger totalsop2"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header"><span class="totalsop"></span> Respuestas de tickets</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu listasop" style="overflow: hidden; width: 100%; height: 200px;"></ul><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                  </li>
+                  <li class="footer">
+                    <a href="http://45.230.171.2/cliente/index.php#soporte/" class="ajaxurl">Ver todos</a>
+                  </li>
+                </ul>
+              </li>
+                      
+              <!-- User Account: style can be found in dropdown.less -->
+              <li class="dropdown user user-menu">
+                <a href="http://45.230.171.2/cliente/index.php#" class="dropdown-toggle" data-toggle="dropdown" style="padding:15px 12px 0px 3px;max-width: 180px;text-overflow: ellipsis;white-space:nowrap;overflow:hidden;">
+                  <img src="./DCN-network_files/hombre.png" class="user-image imgadmin2" alt="User Image">
+                  <span class="hidden-xs">ALBETH  LOPEZ / 20176694</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- User image -->
+                  <li class="user-header">
+                    <img src="./DCN-network_files/hombre(1).png" class="img-circle imgadmin2" alt="User Image">
+                    <p>
+                      albeth  lopez / 20176694                    </p>
+                  </li>
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a href="http://45.230.171.2/cliente/index.php#datos/" class="ajaxurl btn btn-default btn-flat">Mi perfil</a>
+                    </div>
+                    <div class="pull-right">
+                      <a href="http://45.230.171.2/cliente/logout.php" class="btn btn-danger">Cerrar sesión <i class="fa fa-sign-in"></i></a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Control Sidebar Toggle Button -->
+
+            </ul>
+          </div>
+
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 563px;"><section class="sidebar" style="height: 563px; overflow: hidden; width: auto;">
+          <!-- Sidebar user panel -->
+
+<div class="user-panel">
+        <div class="pull-left image">
+          <img src="./DCN-network_files/hombre(2).png" class="img-circle imgadmin2" style="border: 2px solid #F9F9F9;margin-top: 4px;">
+        </div>
+        <div class="pull-left" style="
+    width: 117px;
+    white-space: normal;
+    font-size: 11.5px;
+    line-height: 12px;
+    margin-top: 13px;
+    margin-left: 5px;
+    font-weight: 600;
+">
+          <p>ALBETH  LOPEZ / 20176694</p>
+</div>
+</div>
+      
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu">
+
+            <li class="tactive">
+              <a href="http://45.230.171.2/cliente/index.php#home/" class="ajaxurl">
+                <i class="fa fa-dashboard"></i> <span data-idioma="MENU:inicio">Inicio</span>
+               </a>
+            </li>
+
+<li><a href="http://45.230.171.2/cliente/index.php#facturas/" class="ajaxurl"><i class="fa fa-file-pdf-o"></i> <span data-idioma="MENU:facturas">Mis facturas</span></a></li>
+<li><a href="http://45.230.171.2/cliente/index.php#reporte/" class="ajaxurl"><i class="fa fa-envelope-o"></i> <span data-idioma="MENU:reporte">Reportar Pago</span></a></li>
+<li><a href="http://45.230.171.2/cliente/index.php#soporte/" class="ajaxurl"><i class="fa fa-life-ring"></i> <span data-idioma="MENU:soporte">Soporte Técnico</span></a></li>
+<li><a href="http://45.230.171.2/cliente/index.php#documentos/" class="ajaxurl"><i class="fa fa-file-text-o"></i> <span data-idioma="MENU:documentos">Mis Documentos</span></a></li>
+<li><a href="javascript:void(0)" data-toggle="control-sidebar" class="achat"><i class="fa fa-comments-o"></i> <span data-idioma="MENU:chat">Chat</span> <span class="totalchat"><span class="badge bdchat">6</span></span></a></li>
+
+
+
+<li class="treeview">
+              <a href="http://45.230.171.2/cliente/index.php#">
+                <i class="fa fa-briefcase"></i>
+                <span data-idioma="MENU:utilidades">Utilidades</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="http://45.230.171.2/cliente/index.php#" id="linktemporal" class="ajaxurl" style="display:none">tmp</a></li>
+                <li><a href="http://45.230.171.2/cliente/index.php#test/" class="ajaxurl"><i class="fa fa-signal"></i> <span data-idioma="SUBMENU:test">Test de Velocidad</span></a></li>
+                <li><a href="http://45.230.171.2/cliente/index.php#datos/" class="ajaxurl"><i class="fa fa-user-plus"></i> <span data-idioma="SUBMENU:datos">Mis datos</span></a></li>
+<li><a href="http://45.230.171.2/cliente/index.php#consumo/" class="ajaxurl"><i class="fa fa-bar-chart"></i> <span data-idioma="SUBMENU:consumo">Mi Tráfico actual</span></a></li>
+              </ul>
+            </li>
+            
+ <li><a href="http://45.230.171.2/cliente/index.php#logout/" class="ajaxurl"><i class="fa fa-sign-out"></i> Salir</a></li>          
+</ul>
+
+
+        </section><div class="slimScrollBar" style="background: rgba(0, 0, 0, 0.2); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 563px;"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper" style="min-height: 613px;">
+      <div id="tmp"></div>
+        <!-- Main content -->
+        <section class="content" id="bodysystem"><div class="modal fade in" id="modalbanner" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+<h4 class="modal-title"><i class="fa fa-list"></i> Publicidad</h4>
+</div>
+<div class="modal-body no-padding">
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+				<!-- begin col-3 -->
+<div class="col-md-3 col-sm-6 col-xs-6 wdusuarios">
+					<div class="widget widget-stats bg-green">
+						<div class="stats-icon"><i class="fa fa-file-pdf-o"></i></div>
+						<div class="stats-info">
+							<h4>FACTURAS NO PAGADAS</h4>
+							<p>0</p>	                           
+						</div>
+						<div class="stats-link">
+							<a href="http://45.230.171.2/cliente/index.php#facturas/" class="ajaxurl">Ir a facturas <i class="fa fa-arrow-circle-o-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- end col-3 -->
+				<!-- begin col-3 -->
+				<div class="col-md-3 col-sm-6 col-xs-6 wdoperaciones">
+					<div class="widget widget-stats bg-blue">
+						<div class="stats-icon"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
+						<div class="stats-info">
+							<h4>TICKET SOPORTE</h4>
+							<p>0</p>	
+						</div>
+						<div class="stats-link">
+							<a href="http://45.230.171.2/cliente/index.php#soporte/" class="ajaxurl">Ir a Soporte <i class="fa fa-arrow-circle-o-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- end col-3 -->
+				<!-- begin col-3 -->
+				<div class="col-md-3 col-sm-6 col-xs-6 wdfacturas">
+					<div class="widget widget-stats bg-purple">
+						<div class="stats-icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></div>
+						<div class="stats-info">
+							<h4>TRÁFICO DEL MES</h4>
+							<p>0</p>	
+						</div>
+						<div class="stats-link">
+                        <a href="http://45.230.171.2/cliente/index.php#consumo/" class="ajaxurl">Ver tráfico actual <i class="fa fa-arrow-circle-o-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- end col-3 -->
+				<!-- begin col-3 -->
+				<div class="col-md-3 col-sm-6 col-xs-6 wdsoporte">
+					<div class="widget widget-stats bg-red">
+						<div class="stats-icon"><i class="fa fa-male" aria-hidden="true"></i></div>
+						<div class="stats-info">
+							<h4>ESTADO</h4>
+							<p>ACTIVO</p>	
+						</div>
+						<div class="stats-link">
+							<a href="http://45.230.171.2/cliente/index.php#datos/" class="ajaxurl">Mis datos <i class="fa fa-arrow-circle-o-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- end col-3 -->
+</div>
+
+<div class="row">
+<div class="extradata col-sm-12">
+<div class="box box-flat box-solid">
+<div class="box-header with-border">
+<h3 class="box-title"><i class="fa fa-bar-chart"></i> Mi consumo</h3>
+</div>
+<div class="box-body">
+<!--Tabs -->
+<div class="nav-tabs-custom">
+<ul class="nav nav-tabs">
+<li class="active"><a href="http://45.230.171.2/cliente/index.php#tab_1" data-toggle="tab" class="flotsemana"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Últimos 7 días</a></li>
+<li><a href="http://45.230.171.2/cliente/index.php#tab_2" data-toggle="tab"><i class="fa fa-calendar" aria-hidden="true"></i> Últimos 30 días</a></li>
+</ul>
+<div class="tab-content">
+
+<div class="tab-pane active" id="tab_1">
+<div class="chart" id="flot-semana" style="height: 220px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="220" version="1.1" width="1094" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with RaphaÃ«l 2.1.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="59.84375" y="153.11439601237498" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4.005021012374982" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0 MiB</tspan></text><path fill="none" stroke="#aaaaaa" d="M72.34375,153.11439601237498H1069" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="59.84375" y="121.08579700928124" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4.007672009281237" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0.25 MiB</tspan></text><path fill="none" stroke="#aaaaaa" d="M72.34375,121.08579700928124H1069" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="59.84375" y="89.05719800618749" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4.010323006187491" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0.5 MiB</tspan></text><path fill="none" stroke="#aaaaaa" d="M72.34375,89.05719800618749H1069" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="59.84375" y="57.028599003093746" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4.0129740030937455" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0.75 MiB</tspan></text><path fill="none" stroke="#aaaaaa" d="M72.34375,57.028599003093746H1069" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="59.84375" y="25" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">1 MiB</tspan></text><path fill="none" stroke="#aaaaaa" d="M72.34375,25H1069" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="997.8102678571429" y="165.61439601237498" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,60.7555,631.2969)"><tspan dy="-3.190291487625018" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Lunes</tspan><tspan dy="14.399999999999999" x="997.8102678571429" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">04/06/2018</tspan></text><text x="855.4308035714286" y="165.61439601237498" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,35.0073,549.6339)"><tspan dy="-3.190291487625018" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Domingo</tspan><tspan dy="14.399999999999999" x="855.4308035714286" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">03/06/2018</tspan></text><text x="713.0513392857143" y="165.61439601237498" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,9.2591,467.971)"><tspan dy="-3.190291487625018" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Sábado</tspan><tspan dy="14.399999999999999" x="713.0513392857143" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">02/06/2018</tspan></text><text x="570.671875" y="165.61439601237498" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-16.4892,386.308)"><tspan dy="-3.190291487625018" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Viernes</tspan><tspan dy="14.399999999999999" x="570.671875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">01/06/2018</tspan></text><text x="428.2924107142857" y="165.61439601237498" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-42.2402,304.6361)"><tspan dy="-3.190291487625018" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Jueves</tspan><tspan dy="14.399999999999999" x="428.2924107142857" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">31/05/2018</tspan></text><text x="285.91294642857144" y="165.61439601237498" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-67.9885,222.9732)"><tspan dy="-3.190291487625018" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Miércoles</tspan><tspan dy="14.399999999999999" x="285.91294642857144" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">30/05/2018</tspan></text><text x="143.53348214285714" y="165.61439601237498" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-93.7367,141.3103)"><tspan dy="-3.190291487625018" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Martes</tspan><tspan dy="14.399999999999999" x="143.53348214285714" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">29/05/2018</tspan></text><rect x="90.14118303571428" y="153.11439601237498" width="51.892299107142854" height="0" r="0" rx="0" ry="0" fill="#00acac" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="145.03348214285714" y="153.11439601237498" width="51.892299107142854" height="0" r="0" rx="0" ry="0" fill="#ff5b57" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="232.52064732142856" y="153.11439601237498" width="51.892299107142854" height="0" r="0" rx="0" ry="0" fill="#00acac" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="287.4129464285714" y="153.11439601237498" width="51.892299107142854" height="0" r="0" rx="0" ry="0" fill="#ff5b57" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="374.90011160714283" y="153.11439601237498" width="51.892299107142854" height="0" r="0" rx="0" ry="0" fill="#00acac" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="429.79241071428567" y="153.11439601237498" width="51.892299107142854" height="0" r="0" rx="0" ry="0" fill="#ff5b57" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="517.2795758928571" y="153.11439601237498" width="51.892299107142854" height="0" r="0" rx="0" ry="0" fill="#00acac" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="572.171875" y="153.11439601237498" width="51.892299107142854" height="0" r="0" rx="0" ry="0" fill="#ff5b57" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="659.6590401785714" y="153.11439601237498" width="51.892299107142854" height="0" r="0" rx="0" ry="0" fill="#00acac" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="714.5513392857143" y="153.11439601237498" width="51.892299107142854" height="0" r="0" rx="0" ry="0" fill="#ff5b57" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="802.0385044642857" y="153.11439601237498" width="51.892299107142854" height="0" r="0" rx="0" ry="0" fill="#00acac" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="856.9308035714286" y="153.11439601237498" width="51.892299107142854" height="0" r="0" rx="0" ry="0" fill="#ff5b57" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="944.41796875" y="153.11439601237498" width="51.892299107142854" height="0" r="0" rx="0" ry="0" fill="#00acac" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="999.3102678571429" y="153.11439601237498" width="51.892299107142854" height="0" r="0" rx="0" ry="0" fill="#ff5b57" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect></svg><div class="morris-hover morris-default-style" style="display: none;"></div></div>
+</div>
+
+<div class="ultimomes tab-pane" id="tab_2">
+<table class="table table-striped" id="tblmensual">
+<thead>
+<tr>
+<th>Fecha</th>
+<th>Total Descarga</th>
+<th>Toal Subida</th>
+</tr>
+</thead>
+<tbody><tr><td>Sábado - 05/05/2018</td><td>0</td><td>0</td></tr><tr><td>Domingo - 06/05/2018</td><td>0</td><td>0</td></tr><tr><td>Lunes - 07/05/2018</td><td>0</td><td>0</td></tr><tr><td>Martes - 08/05/2018</td><td>0</td><td>0</td></tr><tr><td>Miércoles - 09/05/2018</td><td>0</td><td>0</td></tr><tr><td>Jueves - 10/05/2018</td><td>0</td><td>0</td></tr><tr><td>Viernes - 11/05/2018</td><td>0</td><td>0</td></tr><tr><td>Sábado - 12/05/2018</td><td>0</td><td>0</td></tr><tr><td>Domingo - 13/05/2018</td><td>0</td><td>0</td></tr><tr><td>Lunes - 14/05/2018</td><td>0</td><td>0</td></tr><tr><td>Martes - 15/05/2018</td><td>0</td><td>0</td></tr><tr><td>Miércoles - 16/05/2018</td><td>0</td><td>0</td></tr><tr><td>Jueves - 17/05/2018</td><td>0</td><td>0</td></tr><tr><td>Viernes - 18/05/2018</td><td>0</td><td>0</td></tr><tr><td>Sábado - 19/05/2018</td><td>0</td><td>0</td></tr><tr><td>Domingo - 20/05/2018</td><td>0</td><td>0</td></tr><tr><td>Lunes - 21/05/2018</td><td>0</td><td>0</td></tr><tr><td>Martes - 22/05/2018</td><td>0</td><td>0</td></tr><tr><td>Miércoles - 23/05/2018</td><td>0</td><td>0</td></tr><tr><td>Jueves - 24/05/2018</td><td>0</td><td>0</td></tr><tr><td>Viernes - 25/05/2018</td><td>0</td><td>0</td></tr><tr><td>Sábado - 26/05/2018</td><td>0</td><td>0</td></tr><tr><td>Domingo - 27/05/2018</td><td>0</td><td>0</td></tr><tr><td>Lunes - 28/05/2018</td><td>0</td><td>0</td></tr><tr><td>Martes - 29/05/2018</td><td>0</td><td>0</td></tr><tr><td>Miércoles - 30/05/2018</td><td>0</td><td>0</td></tr><tr><td>Jueves - 31/05/2018</td><td>0</td><td>0</td></tr><tr><td>Viernes - 01/06/2018</td><td>0</td><td>0</td></tr><tr><td>Sábado - 02/06/2018</td><td>0</td><td>0</td></tr><tr><td>Domingo - 03/06/2018</td><td>0</td><td>0</td></tr><tr><td>Lunes - 04/06/2018</td><td>0</td><td>0</td></tr><tr><td><h4><b>TOTALES</b></h4></td><td><h4><b>0</b></h4></td><td><h4><b>0</b></h4></td></tr></tbody>
+
+</table>
+</div>
+
+</div>
+<!-- /.tab-content -->
+</div>
+<!-- nav-tabs -->
+</div>
+</div>
+</div>
+
+</div>
+<div class="row">
+<div class="col-sm-12 col-centered">  
+<div class="box">
+<div class="box-body no-padding">
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox" style="height: 200px;">
+<div class="item active" data-interval="104500"><a href="http://138.122.5.77/cliente/login.php" target="blank"><img src="./DCN-network_files/logo mkr2.jpg" alt="Banner"></a></div>  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="http://45.230.171.2/cliente/index.php#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="right carousel-control" href="http://45.230.171.2/cliente/index.php#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+
+</div><!-- /.box-body -->
+</div>            
+</div>     
+</div>
+
+ <style type="text/css">
+ .widget-stats .stats-info p {
+    font-size: 20px !important;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+display: block;
+height: auto;
+min-height: 200px;
+max-width: 100%;
+line-height: 1;
+width: 100%; // Add this
+cursor:pointer;
+}
+
+.carousel-control {
+   width: 50px;
+}
+#modalbanner .modal-dialog {
+    width: 95%;
+    height: calc(100% - 40px);
+    margin: 20px auto;
+    padding: 0;
+}
+
+#modalbanner .modal-content {
+  height: 100%;
+  min-height: 100%;
+  border-radius: 0;
+}
+#modalbanner .modal-body {
+    min-height: calc(100% - 35px);
+    overflow-y: scroll;
+}
+#printbanner{
+position: absolute; height: 100%; border: none;
+width:100%
+}
+
+ </style>
+ 
+ <script> 
++function ($) { "use strict";
+ 
+  // CAROUSEL CLASS DEFINITION
+  // =========================
+ 
+  var Carousel = function (element, options) {
+    this.$element    = $(element)
+    this.$indicators = this.$element.find('.carousel-indicators')
+    this.options     = options
+    this.paused      =
+    this.sliding     =
+    this.interval    =
+    this.$active     =
+    this.$items      = null
+    //[TODO Kevin] Added - BEGIN
+    this.isFirstCycle= true
+    //[TODO Kevin] Added - BEGIN
+ 
+    this.options.pause == 'hover' && this.$element
+      .on('mouseenter', $.proxy(this.pause, this))
+      .on('mouseleave', $.proxy(this.cycle, this))
+  }
+ 
+  Carousel.DEFAULTS = {
+    interval: 5000
+  , pause: 'hover'
+  , wrap: true
+  }
+ 
+  Carousel.prototype.cycle =  function (e) {
+    e || (this.paused = false)
+ 
+    this.interval && clearInterval(this.interval)
+ 
+    //[TODO Kevin] Modified - BEGIN
+    //this.options.interval && !this.paused && (this.interval = setInterval($.proxy(this.next, this), this.options.interval))
+
+    if (this.options.interval && !this.paused) {
+      var $active = this.$element.find('.item.active');
+      
+      /**CUSTOM ITEM INTERVAL**/
+      if ($active.data('interval')) {
+        var customInterval;
+      
+        /*On First Cycle*/
+        if(this.isFirstCycle) {
+          //Get ACTIVE ITEM interval
+          customInterval = $active.data('interval');
+          this.isFirstCycle = false;
+        
+        /*On Suceeding Cycles*/
+        } else {
+          //Get NEXT ITEM interval
+          var $next = $active['next']();
+          
+          if (!$next.length) {
+            if (!this.options.wrap) return this
+            $next = this.$element.find('.item')['first']()
+          }
+          
+          customInterval = $next.data('interval');
+        }
+        
+        this.interval = setInterval($.proxy(this.next, this), customInterval);
+      }
+      
+      /**DEFAULT INTERVAL**/
+      else {
+        this.interval = setInterval($.proxy(this.next, this), this.options.interval);
+      }
+    }
+    //[TODO Kevin] Modified - END
+
+    return this
+  }
+ 
+  Carousel.prototype.getActiveIndex = function () {
+    this.$active = this.$element.find('.item.active')
+    this.$items  = this.$active.parent().children()
+ 
+    return this.$items.index(this.$active)
+  }
+ 
+  Carousel.prototype.to = function (pos) {
+    var that        = this
+    var activeIndex = this.getActiveIndex()
+ 
+    if (pos > (this.$items.length - 1) || pos < 0) return
+ 
+    if (this.sliding)       return this.$element.one('slid', function () { that.to(pos) })
+    if (activeIndex == pos) return this.pause().cycle()
+ 
+    return this.slide(pos > activeIndex ? 'next' : 'prev', $(this.$items[pos]))
+  }
+ 
+  Carousel.prototype.pause = function (e) {
+    e || (this.paused = true)
+ 
+    if (this.$element.find('.next, .prev').length && $.support.transition.end) {
+      this.$element.trigger($.support.transition.end)
+      this.cycle(true)
+    }
+ 
+    this.interval = clearInterval(this.interval)
+ 
+    return this
+  }
+ 
+  Carousel.prototype.next = function () {
+    if (this.sliding) return
+    return this.slide('next')
+  }
+ 
+  Carousel.prototype.prev = function () {
+    if (this.sliding) return
+    return this.slide('prev')
+  }
+ 
+  Carousel.prototype.slide = function (type, next) {
+    var $active   = this.$element.find('.item.active');
+    var $next     = next || $active[type]()
+    var isCycling = this.interval
+    var direction = type == 'next' ? 'left' : 'right'
+    var fallback  = type == 'next' ? 'first' : 'last'
+    var that      = this
+    
+    if (!$next.length) {
+      if (!this.options.wrap) return
+      $next = this.$element.find('.item')[fallback]()
+    }
+ 
+    this.sliding = true
+ 
+    isCycling && this.pause()
+ 
+    var e = $.Event('slide.bs.carousel', { relatedTarget: $next[0], direction: direction })
+ 
+    if ($next.hasClass('active')) return
+ 
+    if (this.$indicators.length) {
+      this.$indicators.find('.active').removeClass('active')
+      this.$element.one('slid', function () {
+        var $nextIndicator = $(that.$indicators.children()[that.getActiveIndex()])
+        $nextIndicator && $nextIndicator.addClass('active')
+      })
+    }
+ 
+    if ($.support.transition && this.$element.hasClass('slide')) {
+      this.$element.trigger(e)
+      if (e.isDefaultPrevented()) return
+      $next.addClass(type)
+      $next[0].offsetWidth // force reflow
+      $active.addClass(direction)
+      $next.addClass(direction)
+      $active
+        .one($.support.transition.end, function () {
+          $next.removeClass([type, direction].join(' ')).addClass('active')
+          $active.removeClass(['active', direction].join(' '))
+          that.sliding = false
+          setTimeout(function () { that.$element.trigger('slid') }, 0)
+        })
+        .emulateTransitionEnd(600)
+    } else if(this.$element.hasClass('slide')) {
+        this.$element.trigger(e)
+        if (e.isDefaultPrevented()) return
+        $active.animate({left: (direction == 'right' ? '100%' : '-100%')}, 600, function(){
+            $active.removeClass('active')
+            that.sliding = false
+            setTimeout(function () { that.$element.trigger('slid') }, 0)
+        })
+        $next.addClass(type).css({left: (direction == 'right' ? '-100%' : '100%')}).animate({left: 0}, 600,  function(){
+            $next.removeClass(type).addClass('active')
+        })
+    } else {
+      this.$element.trigger(e)
+      if (e.isDefaultPrevented()) return
+      $active.removeClass('active')
+      $next.addClass('active')
+      this.sliding = false
+      this.$element.trigger('slid')
+    }
+ 
+    isCycling && this.cycle()
+ 
+    return this
+  }
+ 
+ 
+  // CAROUSEL PLUGIN DEFINITION
+  // ==========================
+ 
+  var old = $.fn.carousel
+ 
+  $.fn.carousel = function (option) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.carousel')
+      var options = $.extend({}, Carousel.DEFAULTS, $this.data(), typeof option == 'object' && option)
+      var action  = typeof option == 'string' ? option : options.slide
+ 
+      if (!data) $this.data('bs.carousel', (data = new Carousel(this, options)))
+      if (typeof option == 'number') data.to(option)
+      else if (action) data[action]()
+      else if (options.interval) data.pause().cycle()
+    })
+  }
+ 
+  $.fn.carousel.Constructor = Carousel
+ 
+ 
+  // CAROUSEL NO CONFLICT
+  // ====================
+ 
+  $.fn.carousel.noConflict = function () {
+    $.fn.carousel = old
+    return this
+  }
+ 
+ 
+  // CAROUSEL DATA-API
+  // =================
+ 
+  $(document).on('click.bs.carousel.data-api', '[data-slide], [data-slide-to]', function (e) {
+    var $this   = $(this), href
+    var $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) //strip for ie7
+    var options = $.extend({}, $target.data(), $this.data())
+    var slideIndex = $this.attr('data-slide-to')
+    if (slideIndex) options.interval = false
+ 
+    $target.carousel(options)
+ 
+    if (slideIndex = $this.attr('data-slide-to')) {
+      $target.data('bs.carousel').to(slideIndex)
+    }
+ 
+    e.preventDefault()
+  })
+ 
+  $(window).on('load', function () {
+    $('[data-ride="carousel"]').each(function () {
+      var $carousel = $(this)
+      $carousel.carousel($carousel.data())
+    })
+  })
+ 
+}(window.jQuery);
+/*============ MODIFIED CAROUSEL - END ============*/
+
+
+
+
+
+
+
+
+
+/*==================================================*/
+/*                M  A  I  N                        */
+/*==================================================*/
+// invoke the carousel
+$('#myCarousel').carousel({
+  interval: 1000
+});
+
+/* SLIDE ON CLICK */ 
+
+$('.carousel-linked-nav > li > a').click(function() {
+
+    // grab href, remove pound sign, convert to number
+    var item = Number($(this).attr('href').substring(1));
+
+    // slide to number -1 (account for zero indexing)
+    $('#myCarousel').carousel(item - 1);
+
+    // remove current active class
+    $('.carousel-linked-nav .active').removeClass('active');
+
+    // add active class to just clicked on item
+    $(this).parent().addClass('active');
+
+    // don't follow the link
+    return false;
+});
+
+/* AUTOPLAY NAV HIGHLIGHT */
+
+// bind 'slid' function
+$('#myCarousel').bind('slid', function() {
+
+    // remove active class
+    $('.carousel-linked-nav .active').removeClass('active');
+
+    // get index of currently active item
+    var idx = $('#myCarousel .item.active').index();
+
+    // select currently active item and add active class
+    $('.carousel-linked-nav li:eq(' + idx + ')').addClass('active');
+
+});
+
+function getbanner(url){
+$("#printbanner").remove();
+$('#modalbanner').modal('show');
+var iFrame = $('<iframe></iframe>');
+      iFrame
+      .attr("id", "printbanner")
+      .attr("name", "printbanner")
+      .attr("src", "about:blank")
+      .appendTo($("#modalbanner .modal-body"));
+if (iFrame != null && url != null) {
+iFrame.attr('src', url);
+iFrame.load(function() {
+
+});
+}
+}
+$(function(){
+
+$.ajax({
+type: "POST",
+dataType: 'json',
+url: "home.php",
+data: { action: "semana"}
+})
+.done(function( data ) {
+$('#flot-semana').empty();
+chart_trafico = Morris.Bar({
+  element: 'flot-semana',
+  resize: true,
+  data: data,
+  xkey: 'x',
+  barColors: ['#00acac', '#ff5b57'],
+  ykeys: ['y', 'z'],
+  yLabelFormat:
+  function (y) { 
+  if(y>1024){
+   y=y/1024;
+   y=Math.round(y*10)/10;
+  return y.toString() + ' GiB';
+  }else{
+  return y.toString() + ' MiB';
+  }
+   },
+  labels: ['Descarga', 'Subida'],
+  xLabelAngle: 35,
+  hideHover: 'auto'
+});
+});
+
+
+$.ajax({
+type: "POST",
+dataType: 'json',
+url: "home.php",
+data: { action: "mensual"}
+})
+.done(function( data ) {
+$('#tblmensual tbody').empty();
+$.each(data, function(k,v) {
+$('#tblmensual tbody').append('<tr><td>'+data[k]['fecha']+'</td><td>'+data[k]['down']+'</td><td>'+data[k]['up']+'</td></tr>');
+if(data[k]['down2']){
+$('#tblmensual tbody').append('<tr><td><h4><b>TOTALES</b></h4></td><td><h4><b>'+data[k]['down2']+'</b></h4></td><td><h4><b>'+data[k]['up2']+'</b></h4></td></tr>');	
+}
+
+});
+
+});
+
+})
+ </script></section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+
+
+<aside class="control-sidebar control-sidebar-dark chatbod" style="position: fixed; height: 100%; overflow: auto; padding-bottom: 50px; max-height: 100%;">
+<div class="conversation-wrap col-xs-12 no-margin no-padding"><h5 class="headerchat">OPERADORES</h5><div class="media conversation">
+<a href="javascript:void(0)" onclick="javascript:chatWith(&#39;19&#39;,&#39;Yuraima&#39;)">
+<div class="pull-left avatarchat">
+<img src="./DCN-network_files/mujer-soporte.png">
+</div>
+<div class="pull-left">
+<div class="namechat">Yuraima</div>
+<small class="chatnivel">Pagos</small>
+</div>
+
+<div class="pull-left">
+<div class="chatstate"><i class="fa fa-circle"></i></div>
+</div>
+
+</a>
+</div><div class="media conversation">
+<a href="javascript:void(0)" onclick="javascript:chatWith(&#39;1&#39;,&#39;Admin Principal&#39;)">
+<div class="pull-left avatarchat">
+<img src="./DCN-network_files/admin.png">
+</div>
+<div class="pull-left">
+<div class="namechat">Admin Principal</div>
+<small class="chatnivel">Administrador</small>
+</div>
+
+<div class="pull-left">
+<div class="chatstate"><i class="fa fa-circle"></i></div>
+</div>
+
+</a>
+</div><div class="media conversation">
+<a href="javascript:void(0)" onclick="javascript:chatWith(&#39;3&#39;,&#39;Luis&#39;)">
+<div class="pull-left avatarchat">
+<img src="./DCN-network_files/avatar-4.png">
+</div>
+<div class="pull-left">
+<div class="namechat">Luis</div>
+<small class="chatnivel">Administrador</small>
+</div>
+
+<div class="pull-left">
+<div class="chatstate"><i class="fa fa-circle"></i></div>
+</div>
+
+</a>
+</div><div class="media conversation">
+<a href="javascript:void(0)" onclick="javascript:chatWith(&#39;4&#39;,&#39;Andreina&#39;)">
+<div class="pull-left avatarchat">
+<img src="./DCN-network_files/mujer-soporte.png">
+</div>
+<div class="pull-left">
+<div class="namechat">Andreina</div>
+<small class="chatnivel">Administrador</small>
+</div>
+
+<div class="pull-left">
+<div class="chatstate"><i class="fa fa-circle"></i></div>
+</div>
+
+</a>
+</div><div class="media conversation">
+<a href="javascript:void(0)" onclick="javascript:chatWith(&#39;5&#39;,&#39;Dcn-dyd&#39;)">
+<div class="pull-left avatarchat">
+<img src="./DCN-network_files/avatar-1.png">
+</div>
+<div class="pull-left">
+<div class="namechat">Dcn-dyd</div>
+<small class="chatnivel">Administrador</small>
+</div>
+
+<div class="pull-left">
+<div class="chatstate"><i class="fa fa-circle"></i></div>
+</div>
+
+</a>
+</div><div class="media conversation">
+<a href="javascript:void(0)" onclick="javascript:chatWith(&#39;17&#39;,&#39;Freyu&#39;)">
+<div class="pull-left avatarchat">
+<img src="./DCN-network_files/mujer.png">
+</div>
+<div class="pull-left">
+<div class="namechat">Freyu</div>
+<small class="chatnivel">Administrador</small>
+</div>
+
+<div class="pull-left">
+<div class="chatstate"><i class="fa fa-circle"></i></div>
+</div>
+
+</a>
+</div></div>
+</aside>
+
+    </div><!-- ./wrapper -->
+
+    <!-- jQuery 2.1.4 -->
+    <script src="./DCN-network_files/jQuery-2.1.4.min.js.descarga"></script>
+
+    <script src="./DCN-network_files/bootstrap.min.js.descarga"></script>
+    <script src="./DCN-network_files/datatables.min.js.descarga"></script>
+    <script src="./DCN-network_files/bootstrap-notify.min.js.descarga"></script>
+    <script src="./DCN-network_files/jquery.form.min.js.descarga"></script>
+
+   <!-- AdminLTE App -->
+    <script src="./DCN-network_files/app.min.js.descarga"></script>
+    <script src="./DCN-network_files/md5.js.descarga"></script>
+    <!-- PLUGINS -->
+    <script src="./DCN-network_files/jquery.sparkline.min.js.descarga"></script>
+    <script src="./DCN-network_files/jquery.slimscroll.min.js.descarga"></script>
+    <script type="text/javascript" src="./DCN-network_files/jquery.flot.min.js.descarga"></script>
+    <script type="text/javascript" src="./DCN-network_files/jquery.flot.time.min.js.descarga"></script>
+    <script type="text/javascript" src="./DCN-network_files/jquery.flot.symbol.min.js.descarga"></script> 
+    <script src="./DCN-network_files/bootstrap-tabdrop.js.descarga"></script>
+
+   <script src="./DCN-network_files/select2.full.min.js.descarga"></script>
+    <script src="./DCN-network_files/jquery.iframe-transport.js.descarga"></script>
+
+    <script src="./DCN-network_files/tactil.js.descarga"></script>
+    <script src="./DCN-network_files/bootstrap-datepicker.js.descarga"></script>
+    <script src="./DCN-network_files/bootstrap-datepicker.es.min.js.descarga"></script>
+    <script src="./DCN-network_files/raphael-min.js.descarga"></script>
+    <script src="./DCN-network_files/morris.min.js.descarga"></script>
+    <script src="./DCN-network_files/bootstrap3-wysihtml5.all.min.js.descarga"></script>
+    
+    <script src="./DCN-network_files/mikrowisp.js.descarga"></script>
+        <script src="./DCN-network_files/chat.js.descarga"></script>
+    <script>
+$(function(){
+	
+//---------->CARGA IDIOMA +++++++++++
+$.ajax({
+type: "GET",
+dataType: "json",
+url: "idioma/es-Spanish.json?random=OLxBavVh",
+})
+ .done(function( data) {
+//----->MENU
+$.each(data.menu,function(index, value){
+if(index){
+$("[data-idioma='"+index+"']").text(value);
+}
+});
+//------>
+
+});
+//--------------FIN IDIOMA --------->
+
+})
+
+
+
+</script>
+
+<style type="text/css">
+.buttoncss{
+color: #4b6fa9 !important;
+}
+.bdchat{
+background: #c15757;
+font-size: 11px;
+margin-top: -12px !important;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+</style>
+
+
+<div class="modal fade in" id="modalprint" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+<h4 class="modal-title"><i class="fa fa-list"></i> Visor de comprobante</h4>
+</div>
+<div class="modal-body">
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade in" id="modallibre" tabindex="-1" role="dialog" aria-hidden="false" style="display: block; padding-left: 17px;">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle"></i></button>
+<h4 class="modal-title"><i class="fa fa-list"></i> Informacion Importante</h4>
+</div>
+<div class="modal-body">
+
+
+
+	<title></title>
+
+
+<h5><span style="background-color: #ffffff; color: #0000ff;"></span></h5>
+
+<p style="text-align: center;"><span style="font-size:24px;"><span style="color:#FF0000;"><strong><span style="background-color:#FFFF00;">&nbsp;IMPORTANTE: Leer Siempre que Ingrese&nbsp;aquí se notifica Información con 30 días antes de aumentar Tarifas &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </span></strong></span></span></p>
+
+<h1 style="text-align: center;">Nueva Pagina: www.mipago.dcnnetwork.com.ve</h1>
+
+<p aria-level="5" paraeid="{02483deb-84d5-4d1c-8fe1-7abe3ee1ae4f}{169}" paraid="1297876395" role="heading" style="text-align: center;"><span style="font-size:22px;"><span style="color:#FF0000;">La validación&nbsp;de los pagos realizado por Transferencia bancarias tienen un lapso de verificacion</span></span></p>
+
+<p aria-level="5" paraeid="{02483deb-84d5-4d1c-8fe1-7abe3ee1ae4f}{169}" paraid="1297876395" role="heading" style="text-align: center;"><span style="font-size:22px;"><span style="color:#FF0000;">de&nbsp;&nbsp;24 horas hábiles a nuestros bancos, de otros bancos 48 horas hábiles, Transferencia realizadas de un banco a otro&nbsp;deben</span></span></p>
+
+<p aria-level="5" paraeid="{02483deb-84d5-4d1c-8fe1-7abe3ee1ae4f}{169}" paraid="1297876395" role="heading" style="text-align: center;"><span style="font-size:22px;"><span style="color:#FF0000;">ser reportado con la Cèdula del titular de la cuenta, al Banco Provincial.</span></span></p>
+
+<h5><span style="background-color: #ffffff; color: #0000ff;"></span></h5>
+
+<p style="text-align: center;">Toda visita por parte de nuestros Tecnicos tiene un costo de&nbsp; &nbsp;(Bsf 200.000 en la Zona de&nbsp; Petare )&nbsp;</p>
+
+<p style="text-align: center;">Reparaciones, corren por parte del cliente &nbsp;de su cable o equipo&nbsp; Cambio de conectores 100.000 C/U</p>
+
+<p style="text-align: center;">Reemplazo de equipos o cableado principales corren por parte de la Empresa.</p>
+
+<p style="text-align: center;"><span style="font-size:18px;"><span style="color:#FF0000;">La Empresa no se hace responsable en caso de robo, hurto de los equipos.</span></span></p>
+
+<p style="text-align: center;"><span style="font-size:14px;"><strong>N<u>ù</u>meros&nbsp; de Atención a Clientes:&nbsp;0424-239-7956 &nbsp;/ &nbsp;0416-216-1770.</strong></span></p>
+
+<p style="text-align: center;"><span style="font-size:14px;"><strong>Horario; Lunes a Viernes: 8:00 am 12:00 pm 1:00 pm 5:00&nbsp;pm<br>
+Sabado: 8:30am 12:30&nbsp;pm&nbsp;Domingos&nbsp; Feriados No Laboramos<span style="background-color: #ffffff; color: #0000ff;"><em>&nbsp;</em></span></strong></span><span style="font-size:24px;"><strong><span style="background-color: #ffffff; color: #0000ff;"></span></strong></span></p>
+
+<h1 style="text-align: center;"><span style="font-size:48px;"><span style="color:#000000;"><strong><span style="background-color:#00FF00;">Aviso Importante:</span><br>
+<span style="background-color:#00FF00;">Nuevos Precios a partir de 01/06/2018</span><br>
+<span style="background-color:#00FF00;">Aumento del 50% de los Planes</span></strong></span></span></h1>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<h1 style="text-align: center;"><span style="background-color: #008000; color: #ffffff;">Planes Verdes Garantia&nbsp; &nbsp;25%&nbsp; &nbsp;PETARE&nbsp; &nbsp;&nbsp;</span></h1>
+
+<h3 style="text-align: center;"><span style="background-color: #008000; color: #ffffff;">&nbsp; <span style="font-size:18px;">Precio &nbsp;calculado de la tasa de cambio 01-06-2018&nbsp; DICOM 66,7&nbsp;bs S&nbsp;&nbsp;</span></span></h3>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="background-color:rgb(245, 247, 245);border-color:rgb(224, 45, 45);height:1px;width:500px;" width="714">
+	<tbody>
+		<tr>
+			<td style="text-align: center;" width="92">
+			<h4><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>Mínimo</em></span></strong></span><span style="font-size:14px;"></span></h4>
+			</td>
+			<td style="text-align: center;" width="142">
+			<h4><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>1mb&nbsp;-ilimitado</em></span></strong></span></h4>
+			</td>
+			<td style="text-align: center;" width="104">
+			<h4><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"></span></strong><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>&nbsp;Mensual-&nbsp;</em></span></strong></span></span><span style="font-size:14px;"><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>1.050-bsS&nbsp;&nbsp;</em></span></strong></span><strong><span style="background-color: #ffffff; color: #008000;"><em>&nbsp;</em></span></strong></span></h4>
+			</td>
+			<td style="text-align: center;" width="104"><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>Planes&nbsp;verdes</em></span></strong></span></td>
+			<td style="background-color: #07700a; width: 38px;" width="38">
+			<h4><span style="font-size:14px;"></span></h4>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;" width="92">
+			<h4><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>Básico</em></span></strong></span></h4>
+			</td>
+			<td style="text-align: center;" width="142">
+			<h4><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>2mb -ilimitado</em></span></strong></span></h4>
+			</td>
+			<td style="text-align: center;" width="104">
+			<h4><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>Mensual-1.500-bs S</em></span></strong></span></h4>
+			</td>
+			<td style="text-align: center;" width="104"><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>Planes&nbsp;verdes</em></span></strong></span></td>
+			<td style="background-color: #07700a; width: 38px;" width="38">
+			<h4><span style="font-size:14px;"></span></h4>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;" width="92">
+			<h4><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>Medio</em></span></strong></span></h4>
+			</td>
+			<td style="text-align: center;" width="142">
+			<h4><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>3mb -ilimitado</em></span></strong></span></h4>
+			</td>
+			<td style="text-align: center;" width="104">
+			<h4><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>&nbsp;</em></span></strong><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>Mensual-2.250-bs S</em></span></strong></span></span></h4>
+			</td>
+			<td style="text-align: center;" width="104"><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>Planes&nbsp;verdes</em></span></strong></span></td>
+			<td style="background-color: #07700a; width: 38px;" width="38">
+			<h4><span style="font-size:14px;"></span></h4>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;" width="92">
+			<h4><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>Extremo</em></span></strong></span></h4>
+			</td>
+			<td style="text-align: center;" width="142">
+			<h4><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>4mb -ilimitado</em></span></strong></span></h4>
+			</td>
+			<td style="text-align: center;" width="104">
+			<h4><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>Mensual-3.000-bs S</em></span></strong></span></h4>
+			</td>
+			<td style="text-align: center;" width="104"><span style="font-size:14px;"><strong><span style="background-color: #ffffff; color: #008000;"><em>Planes&nbsp;verdes</em></span></strong></span></td>
+			<td style="background-color: #07700a; width: 38px;" width="38">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p style="text-align: center;"><strong><u>Planes Naranja no disponible</u> /// <u>Planes Verdes disponibles</u></strong></p>
+
+<h1 style="text-align: center;"><span style="background-color: #ff6600; color: #ffffff;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Planes Naranja Garantia 10%&nbsp; &nbsp; &nbsp; &nbsp;PETARE&nbsp; &nbsp; &nbsp; &nbsp;</span></h1>
+
+<h3 style="text-align: center;"><span style="font-size:18px;"><span style="background-color: #ff6600; color: #ffffff;">&nbsp;Precio &nbsp;calculado de la tasa de cambio 01-06-2018&nbsp; DICOM 66,7&nbsp;bs S&nbsp;</span></span></h3>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="background-color:rgb(247, 245, 242);border-color:rgb(224, 45, 45);height:1px;width:500px;" width="711">
+	<tbody>
+		<tr>
+			<td style="text-align: center;" width="92">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>Mínimo</strong></em></span></span></h4>
+			</td>
+			<td style="text-align: center;" width="142">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>384k -ilimitado</strong></em></span></span></h4>
+			</td>
+			<td style="text-align: center;" width="170">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>Mensual-450-bs S</strong></em></span></span></h4>
+			</td>
+			<td style="text-align: center;" width="104">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>Planes&nbsp;Naranja&nbsp;</strong></em></span></span></h4>
+			</td>
+			<td style="background-color: #e8650e; width: 38px;" width="38">
+			<h4><span style="font-size:14px;"><span style="color: #000000;">&nbsp;</span></span></h4>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;" width="92">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>Básico</strong></em></span></span></h4>
+			</td>
+			<td style="text-align: center;" width="142">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>512k -ilimitado</strong></em></span></span></h4>
+			</td>
+			<td style="text-align: center;" width="170">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>Mensual-600-bs S</strong></em></span></span></h4>
+			</td>
+			<td style="text-align: center;" width="104">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>Planes Naranja&nbsp;</strong></em></span></span></h4>
+			</td>
+			<td style="background-color: #ed6911; width: 38px;" width="38">
+			<h4><span style="font-size:14px;"><span style="color: #000000;">&nbsp;</span></span></h4>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;" width="92">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>Medio</strong></em></span></span></h4>
+			</td>
+			<td style="text-align: center;" width="142">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>768k -ilimitado</strong></em></span></span></h4>
+			</td>
+			<td style="text-align: center;" width="170">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>Mensual-750-bs S</strong></em></span></span></h4>
+			</td>
+			<td style="text-align: center;" width="104">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>Planes Naranja&nbsp;</strong></em></span></span></h4>
+			</td>
+			<td style="background-color: #f08718; width: 38px;" width="38">
+			<h4><span style="font-size:14px;"><span style="color: #000000;">&nbsp;</span></span></h4>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;" width="92">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>Full</strong></em></span></span></h4>
+			</td>
+			<td style="text-align: center;" width="142">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>1024k -ilimitado</strong></em></span></span></h4>
+			</td>
+			<td style="text-align: center;" width="170">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>Mensual-1.050-bs S</strong></em></span></span></h4>
+			</td>
+			<td style="text-align: center;" width="104">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>Planes Naranja&nbsp;</strong></em></span></span></h4>
+			</td>
+			<td style="background-color: #ed7c13; width: 38px;" width="38">
+			<h4><span style="font-size:14px;"><span style="color: #000000;">&nbsp;</span></span></h4>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;" width="92">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>Extremo</strong></em></span></span></h4>
+			</td>
+			<td style="text-align: center;" width="142">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>1512k -ilimitado</strong></em></span></span></h4>
+			</td>
+			<td style="text-align: center;" width="170">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>Mensual-1.350-bs S</strong></em></span></span></h4>
+			</td>
+			<td style="text-align: center;" width="104">
+			<h4><span style="font-size:14px;"><span style="background-color: #ffffff; color: #ff3700;"><em><strong>Planes Naranja&nbsp;</strong></em></span></span></h4>
+			</td>
+			<td style="background-color: #f07b0e; width: 38px;" width="38">
+			<h4 style="text-align: center;"><span style="color: #000000;">&nbsp;</span></h4>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="text-align: center;">&nbsp; &nbsp; &nbsp; &nbsp;<img alt="" src="./DCN-network_files/Banesco_logo.png" style="width: 196px; height: 120px;"></p>
+
+<h1 style="text-align: center;"><span style="font-size:28px;"><strong><span style="color: rgb(255, 255, 255);"><em><span style="background-color:#FFFFFF;">&nbsp; &nbsp;</span></em></span><span style="color:#008000;"><em><span style="background-color:#FFFFFF;">&nbsp;Cuenta Corriente &nbsp;</span></em></span></strong></span></h1>
+
+<h1 style="text-align: center;"><span style="font-size:28px;"><strong><span style="color:#008000;"><em><span style="background-color:#FFFFFF;">Nùmero: 0134-0192-6019-2302-9376</span></em></span><span style="color: rgb(255, 255, 255);"><em><span style="background-color:#FFFFFF;"> &nbsp; &nbsp;</span></em></span></strong></span></h1>
+
+<h1 style="text-align: center;"><span style="font-size:28px;"><span style="color:#008000;"><strong><em><span style="background-color:#FFFFFF;">&nbsp; &nbsp; Jesus David Valenzuela &nbsp; CI: 22649407 &nbsp; &nbsp;</span></em></strong></span></span></h1>
+
+<h1 style="text-align: center;"><img alt="" src="./DCN-network_files/venezuela.png" style="width: 400px; height: 150px;"><span style="font-size:28px;"><span style="color:#FF0000;"><strong><em><span style="background-color:#FFFFFF;"></span></em></strong></span></span></h1>
+
+<h1 style="text-align: center;"><span style="font-size:28px;"><span style="color:#FF0000;"><strong><em><span style="background-color:#FFFFFF;">Cuenta de Ahorro</span></em></strong></span></span></h1>
+
+<h1 style="text-align: center;"><span style="font-size:28px;"><span style="color:#FF0000;"><strong><em><span style="background-color:#FFFFFF;">Nùmero: 0102-0238-8201-0003-0290 &nbsp; &nbsp; &nbsp;</span></em></strong></span></span></h1>
+
+<h1 style="text-align: center;"><span style="font-size:28px;"><span style="color:#FF0000;"><strong><em><span style="background-color:#FFFFFF;">&nbsp; &nbsp; Andreina Piña CI: 17-531-064 &nbsp;</span></em></strong></span></span></h1>
+
+<h1 style="text-align: center;"><img alt="" src="file:///C:/Users/casa/Pictures/logo"><img alt="" src="./DCN-network_files/banco provincial.jpg" style="width: 600px; height: 50px;"></h1>
+
+<h1 style="text-align: center;"><span style="color:#0000FF;"><strong><em><span style="background-color:#FFFFFF;">&nbsp; &nbsp;<span style="font-size:28px;"> Cuenta Corriente </span></span></em></strong></span></h1>
+
+<h1 style="text-align: center;"><span style="font-size:28px;"><span style="color:#0000FF;"><strong><em><span style="background-color:#FFFFFF;">Nùmero: 0108-0013-7901-0033-8484 &nbsp;&nbsp;</span></em></strong></span></span></h1>
+
+<h1 style="text-align: center;"><span style="color:#0000FF;"><strong><em><span style="background-color:#FFFFFF;"><span style="font-size:28px;">&nbsp; &nbsp; Andreina Piña CI.17531064</span> &nbsp;</span></em></strong></span></h1>
+
+<p style="text-align: center;">&nbsp;</p>
+
+
+</div>
+
+</div>
+</div>
+</div>
+<script>
+$(function(){
+	
+$('#modallibre').modal('show');
+})
+</script>
+<script>
+function getalert(){
+
+$.ajax({
+    url: "ajaxalert.php",
+	dataType:"json",
+    success: function(data){
+
+$('.conversation-wrap').html(data['chat']);
+$('.totalchat').html('<span class="badge bdchat">'+data['totalchat']+'</span>');
+
+$('.listasop').html(data['lista']);
+$('.totalsop').html(data['totalsop']);
+$('.totalsop2').html(data['totalsop']);
+
+    },
+    timeout: 1000 
+});
+}
+getalert();
+setInterval(getalert, 8000);
+
+var idleTime = 0;
+$(document).ready(function () {
+    //Increment the idle time counter every minute.
+    var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+    //Zero the idle timer on mouse movement.
+    $(this).mousemove(function (e) {
+        idleTime = 0;
+    });
+    $(this).keypress(function (e) {
+        idleTime = 0;
+    });
+});
+
+function timerIncrement() {
+    idleTime = idleTime + 1;
+    if (idleTime > 10) {
+    window.location="login.php?msg=exit";
+    }
+}
+
+</script>
+<style type="text/css">
+@media (max-width: 450px) {
+.widget-stats .stats-info h4 {
+    font-size: 10px !important;
+}
+.widget-stats .stats-info p {
+    font-size: 22px !important;
+}
+}
+
+</style>
+<audio id="player_chat" src="../admin/ring/tweet.mp3"></audio>
+
+<div class="modal-backdrop fade in"></div></body></html>
